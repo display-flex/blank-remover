@@ -9,11 +9,11 @@ function copyToClipboard(text) {
   document.body.removeChild(input);
 };
 
-function blankRemover() {
+document.querySelector("#blankButton").onclick = function(){
   var textBefore = document.querySelector("#blankText").value;
   var result = textBefore.replace(/\s+/g, '');
 
   copyToClipboard(result);
 
   document.querySelector("#blankText").value = result;
-}
+};
