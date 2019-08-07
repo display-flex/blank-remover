@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <style>
-	.container { width: 400px; min-height: 400px; padding: 20px;}
-	#blankText { width: 100%; height: 300px; }
-	input { margin-top: 25px;}
-  </style>
-  </head>
-  <body>
-  <div class="container">
-	
-	<div class="headline">
-		<h1>Blank Remover</h1>
-		<p>Just paste the text into the field and confirm the button to clear the text of the spaces. The text is copied automatically</p>
-	</div>
-	
-	<div class="main">
-		<textarea id="blankText" ></textarea>
-		<input type="submit" value="Clean up and copy text" id="blankButton">
-	</div>
-	
-  </div>
-  <script src="popup.js"></script>
-  </body>
+   <head>
+      <style>
+         .container { width: 400px; min-height: 400px; padding: 20px;}
+         .footer { margin-top: 25px; display: flex; justify-content: space-between;} 
+	  #blankText { width: 100%; min-height: 300px; }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="headline">
+            <h1>Blank Remover</h1>
+            <p>Just paste the text into the field and confirm the button to clear the text of the spaces. The text is copied automatically</p>
+         </div>
+         <section class="main">
+            <textarea id="blankText" ></textarea>
+         </section>
+         <section class="footer">
+            <div class="submitButton">
+               <input type="submit" value="Remove blanks" id="blankButton">
+            </div>
+            <div class="copyCheckbox">
+               <input type="checkbox" name="copy" class="copy" value="copy" checked> Copy text automatically<br>	
+            </div>
+         </section>
+      </div>
+      <script src="popup.js"></script>
+   </body>
 </html>
-
