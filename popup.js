@@ -10,8 +10,8 @@ function copyToClipboard(text) {
 };
 
 document.querySelector("#blankButton").onclick = function(){
-  var textBefore = document.querySelector("#blankText").value;
-  var result = textBefore.replace(/\s+/g, '');
+  const textBefore = document.querySelector("#blankText").value;
+  const result = textBefore.replace(/\s+/g, '');
   
    if (document.querySelector('.copy').checked == true) {
      copyToClipboard(result);
