@@ -12,8 +12,10 @@ function copyToClipboard(text) {
 document.querySelector("#blankButton").onclick = function(){
   var textBefore = document.querySelector("#blankText").value;
   var result = textBefore.replace(/\s+/g, '');
-
-  copyToClipboard(result);
-
+  
+   if (document.querySelector('.copy').checked == true) {
+     copyToClipboard(result);
+   }
+  
   document.querySelector("#blankText").value = result;
 };
