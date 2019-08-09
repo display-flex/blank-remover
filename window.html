@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <style>
-         .container { width: 400px; min-height: 400px; padding: 20px;}
-         .footer { margin-top: 25px; display: flex; justify-content: space-between;} 
-	  #blankText { width: 100%; min-height: 300px; }
-      </style>
-   </head>
+      <meta charset="UTF-8">
+      <title>Blank Remover | Remove spaces from your text</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+      <meta name="description" content="This tool allows you to quickly and easily remove spaces from any text">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+</head>
    <body>
-      <div class="container">
-         <div class="headline">
-            <h1>Blank Remover</h1>
-            <p>Just paste the text into the field and confirm the button to clear the text of the spaces. The text is copied automatically</p>
+      <section class="container">
+         <div class="inner">
+            <div class="headline">
+                <h1>Blank Remover</h1>
+               <p>Just paste the text into the field and confirm the button to clear the text of the spaces.</p>
+            </div>
+            <form action="">
+               <textarea class="blankRemover-textarea" placeholder="Your text here"></textarea>
+               <div class="submitArea">
+                  <div class="submitButton">
+                     <a class="button">Remove blanks</a>
+                  </div>
+                  <div class="copyCheckbox">
+                     <input type="checkbox" name="copy" class="copy" value="copy" checked=""> Copy text automatically<br>	
+                  </div>
+               </div>
+            </form>
          </div>
-         <section class="main">
-            <textarea id="blankText" ></textarea>
-         </section>
-         <section class="footer">
-            <div class="submitButton">
-               <input type="submit" value="Remove blanks" id="blankButton">
-            </div>
-            <div class="copyCheckbox">
-               <input type="checkbox" name="copy" class="copy" value="copy" checked> Copy text automatically<br>	
-            </div>
-         </section>
-      </div>
-      <script src="popup.js"></script>
+      </section>
    </body>
+   <script src="popup.js"></script>
 </html>
