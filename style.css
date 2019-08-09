@@ -1,0 +1,94 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+section.container {
+    background: #1f8dd6;
+    width: 500px;
+    height: 400px;
+}
+
+.inner {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    margin-top: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.headline {
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 55px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+textarea {
+    font-size: 14px;
+    color: #fff;
+    border: 3px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+    background-color: #1f8dd6;
+    width: 100%;
+    min-height: 20vh;
+}
+
+textarea::placeholder {
+    color: #fff;
+}
+
+.button {
+    margin-top: 20px;
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    border: none transparent;
+    padding: 0.5em 2em;
+    background: white;
+    color: #1f8dd6;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+.submitArea {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyCheckbox {
+    padding: 30px;
+}
+
+@media (min-width: 48em) {
+    .inner {
+        width: 50%;
+        height: 50%;
+    }
+}
