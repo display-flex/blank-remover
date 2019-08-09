@@ -9,13 +9,13 @@ function copyToClipboard(text) {
   document.body.removeChild(input);
 };
 
-document.querySelector("#blankButton").onclick = function(){
-  const textBefore = document.querySelector("#blankText").value;
+document.querySelector(".button").onclick = function(){
+  const textBefore = document.querySelector(".blankRemover-textarea").value;
   const result = textBefore.replace(/\s+/g, '');
   
    if (document.querySelector('.copy').checked == true) {
      copyToClipboard(result);
    }
   
-  document.querySelector("#blankText").value = result;
+  document.querySelector(".blankRemover-textarea").value = result;
 };
